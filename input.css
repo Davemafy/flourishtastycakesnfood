@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Cookie";
+	src: url("../assets/fonts/Cookie/Cookie-Regular.ttf");
+}
+@font-face {
+	font-family: "Product";
+	src: url("../assets/fonts/Product Sans Regular.ttf");
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: OpenSans;
+	overscroll-behavior-block: contain;
+	scroll-snap-type: block mandatory;
+	scroll-padding-block: 1.5rem;
+}
+
+pbody  > * {
+	scroll-snap-align: start;
+}
+
+@media(max-width: 576px) {
+	body {
+		background-position: 50px -50px;
+		background-size: 500px;
+	}
+	#sec1 {
+		background: linear-gradient(#0000 50%, #111 99%), #3B322C url('../assets/images/jonathan.jpg');
+		background: #fff;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	#cta {
+		background: url(../assets/images/cakeicons.jpg);
+		background: linear-gradient(#0000 50%, #eee 99%), #3B322C url(../assets/images/cakeicons.jpg);
+		background: #fff;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	#cta p {
+		background: hsl(0,0%, 100%, 0.8);
+
+		backdrop-filter: blur(1rem);
+	}
+	#card1 {
+		background: url(../assets/images/cupcut.png);
+		background: #fff;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	#card2 {
+		background: url(../assets/images/burger.png);
+		background: #fff;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+/* hamburger MENU */
+.hamburger {
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	transition: all 0.25s;
+	position: relative;
+}
+
+.hamburger-top ,
+.hamburger-middle ,
+.hamburger-bottom {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 24px;
+	height: 2.5px;
+	background: #444;
+	transform: rotate(0deg);
+	transition: all .5s;
+	border-radius: 3px;
+}
+.hamburger-middle {
+	transform: translateY(7px);
+}
+.hamburger-bottom {
+	transform: translateY(14px);
+}
+
+
+.open {
+	transform: rotate(90deg);
+	transform: translateY(0px);
+}
+
+.open .hamburger-top {
+	transform: rotate(45deg) translateY(6px) translate(6px);
+
+}
+.open .hamburger-middle {
+	display: none;
+}
+.open .hamburger-bottom {
+	transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+div:has(#indicator) {
+	transition: 400ms;
+}
+div:has(.slide) {
+	outline-width: 1.55px;
+}
+#indicator {
+	transition: 500ms ease;
+}
+.slide {
+	transform: translateY(-230%);
+	scale: -1 -1;
+}
