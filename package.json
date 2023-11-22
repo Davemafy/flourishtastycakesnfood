@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
   	"start": "vite",
+    "preview": "vite preview",
     "build": "vite build ",
     "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch "
   },
