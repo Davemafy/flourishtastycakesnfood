@@ -17,15 +17,10 @@ html {
 
 body {
 	font-family: OpenSans;
-	overscroll-behavior-block: contain;
-	scroll-snap-type: block mandatory;
-	scroll-padding-block: 1.5rem;
+	
 }
 
-pbody  > * {
-	scroll-snap-align: start;
-}
-
+/* only backgrouds */
 @media(max-width: 576px) {
 	body {
 		background-position: 50px -50px;
