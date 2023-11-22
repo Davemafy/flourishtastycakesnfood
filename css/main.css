@@ -710,6 +710,15 @@ video {
   border-width: 2px;
 }
 
+.border {
+  border-width: 1px;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .bg-\[\#1111\] {
   background-color: #1111;
 }
@@ -877,8 +886,8 @@ pbody  > * {
 
   #cta {
     background: url(../assets/images/cakeicons.jpg);
-    background: linear-gradient(#0000 50%, #eee 99%), #3B322C url(../assets/images/cakeicons.jpg);
     background: #fff;
+    background: linear-gradient(#0000 50%, #eee 99%), #3B322C url(../assets/images/cakeicons.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }

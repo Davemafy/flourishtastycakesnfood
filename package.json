@@ -6,7 +6,7 @@
   "scripts": {
   	"start": "vite",
     "build": "vite build ",
-    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
+    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch "
   },
   "keywords": [],
   "author": "",
