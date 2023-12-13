@@ -139,16 +139,3 @@ input::placeholder, textarea::placeholder{
 
 
 
-div:has(#indicator) {
-	transition: 400ms;
-}
-div:has(.slide) {
-	outline-width: 1.55px;
-}
-#indicator {
-	transition: 500ms ease;
-}
-.slide {
-	transform: translateY(-230%);
-	scale: -1 -1;
-}
