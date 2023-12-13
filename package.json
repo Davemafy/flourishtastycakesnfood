@@ -4,12 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
-  	"start": "vite",
-    "preview": "vite preview",
-=======
     "start": "vite",
->>>>>>> feature
     "build": "vite build ",
     "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch "
   },
